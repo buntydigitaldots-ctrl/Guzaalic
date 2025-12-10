@@ -1,0 +1,168 @@
+/* ============================================
+   GUZALIC - Booking Page Styles
+============================================ */
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.booking-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.booking-info > p {
+    color: var(--light-silver);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.booking-features {
+    margin-bottom: 40px;
+}
+
+.booking-feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--light-silver);
+}
+
+.booking-feature i {
+    color: var(--gold-accent);
+    font-size: 1.2rem;
+}
+
+.contact-quick {
+    background: var(--secondary-black);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.contact-quick h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-quick p {
+    color: var(--light-silver);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-quick i {
+    color: var(--gold-accent);
+    width: 20px;
+}
+
+.booking-form-wrapper {
+    background: var(--secondary-black);
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.booking-form .form-group {
+    margin-bottom: 25px;
+}
+
+.booking-form label {
+    display: block;
+    color: var(--white);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    background: var(--tertiary-black);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: var(--transition-smooth);
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: var(--gold-accent);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: var(--dark-silver);
+}
+
+.booking-form select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23d4af37' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.booking-form select option {
+    background: var(--secondary-black);
+    color: var(--white);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.booking-submit {
+    width: 100%;
+    padding: 18px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.booking-submit:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+    .booking-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking-form-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .booking-info h2 {
+        font-size: 2rem;
+    }
+}
